@@ -1,0 +1,258 @@
+.section3{
+    width: 100%;
+    height: 60em;
+    background-image: url('../Assets/himg21.jpg');
+    background-size: cover; 
+}
+.backSection3{
+    width: 100%;
+    height: 60em;
+    animation: backDropAn 2s;
+    animation-fill-mode: forwards;
+    text-align: center;
+}
+.section3Content{
+    width: 40%;
+    padding: 10% 0 0 0;
+    color: white;
+    letter-spacing: 1.2px;
+    margin: 0 30%;
+}
+ .firstTitle3{
+    font-size: 380%;
+    text-align: center;
+}
+.firstPar3{
+    font-size: 180%;
+} 
+@keyframes backDropAn{
+    from{
+        background: rgba(111, 0, 255, 0);
+    }
+    to{
+        background: rgba(111, 0, 255, .25);
+    }
+}
+.inputSection3{
+    color: white;
+    padding: 0.8em;
+    margin-bottom:0.3em; 
+    border: 2px solid hsla(0, 0%, 100%, 0); 
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    background: hsla(0, 0%, 100%, 0);
+    width: 50%;
+    opacity: 0.8;
+}
+.inputSection3:focus{
+    opacity: 1;
+    animation: borderAnim 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes borderAnim{
+    from{
+        background: hsla(0, 0%, 100%, 0);
+    border-radius: 0;
+    color: white;
+    }
+    to{
+        background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    color: black;
+    }
+}
+.inputSection3:not(:focus){
+    animation: blurAnim 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes blurAnim{
+    from{
+        background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    color: black;
+    }
+    to{
+        background: hsla(0, 0%, 100%, 0);
+    border-radius: 0;
+    color: white;
+    }
+}
+.textareaSection3{
+    color: white;
+    width: 50%;
+    resize: none;
+    padding: 0.8em;
+    border: 2px solid hsla(0, 0%, 100%, 0); 
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    background: hsla(0, 0%, 100%, 0);
+    opacity: 0.8;
+    margin-bottom:0.3em; 
+}
+.textareaSection3:focus{
+    opacity: 1;
+    animation: borderAnim 1s;
+    animation-fill-mode: forwards;
+}
+.textareaSection3:not(:focus){
+    animation: blurAnim 1s;
+    animation-fill-mode: forwards;
+}
+.submitBtn3{
+    width: 50%;
+    color: white;
+    border: 2px solid hsla(0, 0%, 100%, 0); 
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    background: hsla(0, 0%, 100%, 0);
+    border-radius: 5px;
+    padding: 0.8em;
+    opacity: 0.8;
+}
+.submitBtn3:hover{
+    opacity: 1;
+    cursor: pointer;
+    animation: borderAnim 1s;
+    animation-fill-mode: forwards;
+}
+.submitBtn3:not(:hover){
+    animation: blurAnim 1s;
+    animation-fill-mode: forwards;
+}
+.submitBtn3:active{
+    opacity: 0.8;
+}
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+    letter-spacing: 1.2px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+.section34{
+    width: 100%;
+    height: 60em;
+    background-image: url('../Assets/himg16.jpg');
+    background-size: cover; 
+}
+.backSection34{
+    width: 100%;
+    height: 60em;
+    animation: backDropAn 2s;
+    animation-fill-mode: forwards;
+}
+.section34Content{
+    width: 100%;
+    padding: 10% 2em 0 0;
+    color: white;
+    letter-spacing: 1.2px;
+    margin: 0 12.5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.listaKontakt{
+    padding: 10em 0 0 0;
+    float: left;
+    list-style-type: none;
+}
+.listaKontakt li{
+    padding: 1em 0;
+    font-size: 180%;
+}
+.guglMapa{
+    float: right;
+    margin: 0;
+    padding: 8em 0 0 0;
+}
+.googleMapBtn{
+    background: hsla(0, 0%, 100%, 0);
+    border: 2px solid white;
+    color: white;
+    width: 50%;
+    padding: 2em;
+    font-size: 100%;
+    box-sizing: border-box;
+    border-radius: 5px; 
+}
+.googleMapBtn:hover{
+    cursor: pointer;
+    animation: mapBtnHover1 1s;
+    animation-fill-mode: forwards;
+}
+.googleMapBtn:not(:hover){
+    animation: mapBtnMouseLeave1 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes mapBtnHover1{
+    from{
+        border: 2px solid white;
+        letter-spacing: 1.2px;
+    }
+    to{
+        border: 2px solid hsla(0, 0%, 100%, 0);
+        letter-spacing: 2.2px;
+    }
+}
+@keyframes mapBtnMouseLeave1{
+    from{
+        border: 2px solid hsla(0, 0%, 100%, 0);
+        letter-spacing: 2.2px;
+    }
+    to{
+        border: 2px solid white;
+        letter-spacing: 1.2px;
+    }
+}
+.socialBtns{
+    width: 100%;
+    padding: 0 10%;
+    text-align: center;
+}
+.socialBtns p{
+    color: white;
+    font-size: 180%;
+}
+.socialBtns ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+.socialBtns ul li a i{
+    color: white;
+    font-size: 440%;
+    overflow: hidden;
+}
+.socialBtns ul li a i:hover{
+    color: hsla(0, 0%, 100%, 0.5);
+}
+@media screen and (max-width: 992px) {
+    .socialBtns ul, .section34Content {
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 10px;
+      padding: 10px;
+    }
+    .section3Content, .guglMapa{
+        width: 100%;
+        padding: 0!important;
+        margin: 0!important;
+        float: none;
+    }
+    .section34Content{
+        grid-template-columns: auto;
+        width: 100%;
+        padding: 0!important;
+        margin: 0!important;
+        float: none;
+    }
+    
+}

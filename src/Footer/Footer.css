@@ -1,0 +1,64 @@
+.footer{
+    width: 100%;
+    color: white;
+    background-image: url("../Assets/himg11.jpg") ;
+}
+.granichnik{
+    background: #000000;
+    height: 1em;
+}
+.footerBack{
+    background: hsla(0, 0%, 0%, 0.87);
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+@media screen and (max-width: 992px) {
+    .footerBack{
+        grid-template-columns: auto;
+    }
+}
+.listaF{
+    float: right;
+    text-align: center;
+    list-style-type: none;
+    padding: 2em;
+}
+.listaF li{
+    padding: 0.5em;
+    border-radius:10px; 
+    animation: futLinkContr 0.5s;
+    animation-fill-mode: forwards;
+}
+.listaF li:hover{
+    animation: futLink 1.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+@keyframes futLink{
+    from{border: 2px solid hsla(0, 0%, 100%, 0);}
+    to{border: 2px solid white;}
+}
+@keyframes futLinkContr{
+    from{border: 2px solid white;}
+    to{border: 2px solid hsla(0, 0%, 100%, 0);}
+}
+.podFuter{
+    background: #0e0e0e;
+}
+.podFutCont{
+    text-align: center
+}
+.podFuter ul li{
+    display: inline;
+}
+.podFuter li a, .podFuter a {
+    color: white;
+    text-decoration: none;
+}
+.podFuter li a i{
+    padding:0 0.5em ;
+    font-size: 120%;
+}
+.podFuter li a i:hover,.podFuter li a:hover{
+    color: blueviolet
+}

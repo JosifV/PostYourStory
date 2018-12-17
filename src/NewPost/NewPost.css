@@ -1,0 +1,147 @@
+.sve{
+    width: 100%;
+    height: 40em;
+    background-image: url('../Assets/himg13.jpg');
+    background-size: cover; 
+}
+.backSectionNewPost{
+    width: 100%;
+    height: 40em;
+    animation: backDropAn2 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes backDropAn2{
+    from{
+        background: rgba(0, 0, 0, 0);
+    }
+    to{
+        background: rgba(0, 0, 0, .40);
+    }
+}
+.glavniDiv{
+    padding: 25px;
+    padding-top: 120px; 
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}
+@media screen and (max-width: 992px) {
+    .glavniDiv{
+        margin: 0;
+        padding: 25px;
+    }
+}
+.newPostinput{
+    color: white;
+    padding: 0.8em;
+    margin-bottom:0.3em; 
+    border: 2px solid hsla(0, 0%, 100%, 0); 
+    border-bottom: 2px solid white;
+    background: hsla(0, 0%, 100%, 0);
+    width: 50%;
+    opacity: 0.8;
+    font-size: 120%;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.newPostinput:focus{
+    opacity: 1;
+    animation: borderAnim 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes borderAnim{
+    from{
+        background: hsla(0, 0%, 100%, 0);
+    color: white;
+    }
+    to{
+        background: hsl(0, 0%, 100%);
+    color: black;
+    }
+}
+.newPostinput:not(:focus){
+    animation: blurAnim 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes blurAnim{
+    from{
+        background: hsl(0, 0%, 100%);
+    color: black;
+    }
+    to{
+        background: hsla(0, 0%, 100%, 0);
+    color: white;
+    }
+}
+.newPostTextArea{
+    color: white;
+    padding: 0.8em;
+    border: 2px solid hsla(0, 0%, 100%, 0); 
+    border-bottom: 2px solid white;
+    background: hsla(0, 0%, 100%, 0);
+    opacity: 0.8;
+    margin-bottom:0.3em; 
+    font-size: 120%;
+    resize: none;
+    width: 100%;
+    height: 10em;;
+}
+.newPostTextArea:focus{
+    opacity: 1;
+    animation: borderAnim 1s;
+    animation-fill-mode: forwards;
+}
+.newPostTextArea:not(:focus){
+    animation: blurAnim 1s;
+    animation-fill-mode: forwards;
+}
+.glavniDiv button:hover{
+    background: #333333;
+    color: white;
+}
+.newPostSubmit{
+    margin: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    color: white;
+    border: 2px solid hsla(0, 0%, 100%, 0); 
+    border-bottom: 2px solid white;
+    background: hsla(0, 0%, 100%, 0);
+    padding: 0.8em;
+    font-size: 120%;
+    opacity: 0.8;
+}
+.newPostSubmit:hover{
+    opacity: 1;
+    cursor: pointer;
+    animation: borderAnim 1s;
+    animation-fill-mode: forwards;
+}
+.newPostSubmit:not(:hover){
+    animation: blurAnim 1s;
+    animation-fill-mode: forwards;
+}
+.newPostSubmit:active{
+    opacity: 0.8;
+}
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+    letter-spacing: 1.2px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    letter-spacing: 1.2px;
+    color: white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    letter-spacing: 1.2px;
+    color: white;
+}
+@media screen and (max-width: 992px) {
+    .newPostSubmit, .newPostTextArea, .newPostinput, .glavniDiv{
+        width: 100%;
+        padding: 10px!important;
+        margin: 10px 0!important;
+    }
+}

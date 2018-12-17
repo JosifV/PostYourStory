@@ -1,0 +1,80 @@
+/* .navBar{
+    width: 100%;
+    background: #333333;
+    padding: 30px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    opacity: 0.75;
+} */
+/* .navBar li{
+    display: inline;
+}
+@media screen and (max-width: 992px) {
+    .navBar{
+        height: 80px;
+        text-align: center;
+        padding: 0;
+        overflow: hidden;
+    }
+    .navBar:hover{
+        height: auto;
+    }
+    .navBar li{
+        display: block;
+        padding: 30px;
+    }
+  }
+.navBar li a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+.navBar li a:hover{
+    color: white;
+    background: blueviolet;
+}
+.active{
+    background: blueviolet;
+} */
+ .navBar{
+    width: 100%;
+    background: #333333;
+    padding: 30px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    opacity: 0.75;
+} 
+ .navBar li{
+    display: inline;
+}
+.navBar li a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 30px;
+}
+.navBar li a:hover{
+    color: #ffffff;
+    background: #8a2be2;
+}
+.active{
+    background: #8a2be2;
+}
+@media screen and (max-width: 992px) {
+    .navBar{
+        margin-top: 53px;
+    }
+    .navBar li{
+        display: block;
+        text-align: left;
+        padding-left:35%; 
+    }
+    .navBar li a{
+        padding: 2em;
+        margin: 1em;
+    }
+
+  }

@@ -1,0 +1,53 @@
+.centriranje{
+    text-align: center;
+    background: #333333;
+    color: white;
+    padding: 10em;
+    overflow: hidden;
+    height: 100vh;
+}
+.h1Spiner{
+  overflow: hidden;
+}
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid rgb(255, 72, 0);
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    overflow: hidden;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 28px;
+      left: 28px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+      width: 58px;
+      height: 58px;
+      opacity: 0;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .centriranje{
+        width: 100%;
+        padding: 25px 10px;
+        margin: 0!important;
+        float: none;
+    }
+}

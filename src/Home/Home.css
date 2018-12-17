@@ -1,0 +1,228 @@
+h1{
+    overflow: hidden;
+}
+.section0{
+    width: 100%;
+    height: 60em;
+    background-image: url('../Assets/himg2.jpg');
+    background-size: cover; 
+}
+.backSection0{
+    width: 100%;
+    height: 60em;
+    animation: backDropAn 2s;
+    animation-fill-mode: forwards;
+}
+.section0Content{
+    width: 45%;
+    padding: 15% 10em 0 0;
+    float: right;
+    color: white;
+    letter-spacing: 1.2px;
+}
+.firstTitle{
+    font-size: 350%;
+    text-align: center;
+}
+.firstPar{
+    font-size: 160%;
+} 
+.firstBtn{
+    width: 100%;
+    padding: 1.2em;
+    border: 2px solid hsl(0, 0%, 100%, .5);
+    border-radius: 10px;
+    font-size: 150%;
+    animation: btnFirstOut 1.5s;
+    animation-fill-mode: forwards;
+}
+.firstBtn:hover{
+    animation: btnFirst 2s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+@keyframes btnFirst{
+    from{
+        background: none;
+        color: hsl(0, 0%, 100%, .8);
+    }
+    to{
+        background: hsl(0, 0%, 100%, .6);
+    color: hsl(0, 0%, 20%);
+    }
+}
+@keyframes btnFirstOut{
+    from{
+        background: hsl(0, 0%, 100%, .6);
+    color: hsl(0, 0%, 20%);
+    }
+    to{
+    background: none;
+        color: hsl(0, 0%, 100%, .8);
+    }
+}
+.section1{
+    width: 100%;
+    height: 60em;
+    background-image: url('../Assets/himg1.jpg');
+    background-size: cover; 
+}
+.backSection1{
+    width: 100%;
+    height: 60em;
+    animation: backDropAn 2s;
+    animation-fill-mode: forwards;
+}
+.section1Content{
+    color: white;
+    display: inline;
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-size: 150%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.prviElementSection1{
+     padding: 2em; 
+    margin-top: 10em;
+}
+.razmak{
+    margin-top: 10em;
+    height: 60%;
+    width: 2px;
+    background: white;
+}
+.posebanElementSection1{
+    padding: 2em; 
+    margin-top: 10em;
+}
+.section1inputss input{
+    color: white;
+    padding: 0.8em;
+    margin-bottom:0.3em; 
+    border: 2px solid hsla(0, 0%, 100%, 0); 
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    background: hsla(0, 0%, 100%, 0);
+    width: 50%;
+}
+.section1inputss input:focus{
+    animation: borderAnim 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes borderAnim{
+    from{
+        background: hsla(0, 0%, 100%, 0);
+    border-radius: 0;
+    color: white;
+    }
+    to{
+        background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    color: black;
+    }
+}
+.section1inputss input:not(:focus){
+    animation: blurAnim 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes blurAnim{
+    from{
+        background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    color: black;
+    }
+    to{
+        background: hsla(0, 0%, 100%, 0);
+    border-radius: 0;
+    color: white;
+    }
+}
+.submitBtn{
+    width: 30%;
+    color: white;
+    border: 2px solid hsla(0, 0%, 100%, 0); 
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    background: hsla(0, 0%, 100%, 0);
+    border-radius: 5px;
+    padding: 0.8em;
+}
+.submitBtn:hover{
+    cursor: pointer;
+    animation: borderAnim 1s;
+    animation-fill-mode: forwards;
+}
+.submitBtn:not(:hover){
+    animation: blurAnim 1s;
+    animation-fill-mode: forwards;
+}
+.submitBtn:active{
+    opacity: 0.8;
+}
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+    letter-spacing: 1.2px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+.section2{
+    width: 100%;
+    height: 60em;
+    background-image: url('../Assets/himg9.jpg');
+    background-size: cover; 
+}
+.backSection2{
+    width: 100%;
+    height: 60em;
+    animation: backDropAn 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes backDropAn{
+    from{
+        background: rgba(111, 0, 255, 0);
+    }
+    to{
+        background: rgba(111, 0, 255, .25);
+    }
+}
+.section2Content{
+    width: 35%;
+    padding: 15% 0 0 10em;
+    float: left;
+    color: white;
+    letter-spacing: 1.2px;
+}
+ .scndTitle{
+    font-size: 380%;
+}
+.scndList{
+    font-size: 180%;
+}
+.scndList li{
+    list-style-type: bullets;
+    padding: 0.3em;
+}
+@media screen and (max-width: 992px) {
+    .section1Content {
+        grid-template-columns: auto;
+    }
+    .razmak{
+        height: 2px;
+        width: 60%;
+        margin: 1em 20% 0 20%;
+    }
+    .prviElementSection1, .posebanElementSection1{
+        margin-top: 1em;
+    }
+    .section0Content, .section2Content{
+        width: 100%;
+        padding: 0!important;
+        float: none;
+    }
+}
